@@ -27,18 +27,43 @@ p {
     text-align: left;
     line-height: 1.5;
 }
- 
-h1, .defaultTextColor {
+
+h1,
+.defaultTextColor {
     color: #F7F2EA;
 }
 
+.SiteDescription {
+    text-align: center;
+}
+
+.RegisterLink {
+    color: #35291F;
+    background-color: #E6D8C5;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    border: 1px solid #E6D8C5;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.FieldLabel {
+    display: block;
+    margin-bottom: 6px;
+}
+
+.SubmitContainer {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
 
 h1,
 h2,
 h3 {
     font-family: "Comfortaa", sans-serif;
     line-height: 1.2;
-    
 }
 
 a {
@@ -58,21 +83,21 @@ section {
     margin: 20px;
 }
 
- figure {
+figure {
     margin: 0;
     position: relative;
     max-width: 700px;
- }
+}
 
- figcaption {
+figcaption {
     position: absolute;
     bottom: 12px;
     left: 12px;
-    background-color:#35291F;
+    background-color: #35291F;
     color: #F7F2EA;
     padding: 8px;
     border-radius: 12px;
- }
+}
 
 nav ul {
     list-style: none;
@@ -89,10 +114,34 @@ nav {
     text-align: center;
 }
 
+table {
+    width: 100%;
+    max-width: 600px;
+    margin: 30px auto;
+    border-collapse: collapse;
+}
+
+caption {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+th,
+td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #BBA992;
+}
+
+th {
+    background-color: #E6D8C5;
+}
+
 header {
     background-color: #35291F;
     min-height: 120px;
     padding: 20px;
+    position: relative;
 }
 
 header h1 {
@@ -107,8 +156,100 @@ header nav {
     margin-top: 15px;
 }
 
+fieldset {
+    max-width: 500px;
+    margin: 20px auto;
+    border-radius: 10px;
+    padding: 20px;
+    border: 1px solid #BBA992;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="password"],
+input[type="email"],
+input[type="tel"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #BBA992;
+}
+
+fieldset fieldset {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+legend {
+    font-family: "Comfortaa", sans-serif;
+    font-size: 18px;
+    padding: 0 10px;
+}
+
+button {
+    font-family: "Comfortaa", sans-serif;
+    padding: 12px 20px;
+    background-color: #35291F;
+    color: #F7F2EA;
+    border: 1px solid #35291F;
+    border-radius: 8px;
+}
+
 main {
     width: 90%;
     max-width: 1100px;
     margin: 0 auto;
+}
+
+footer {
+    background-color: #35291F;
+    color: #F7F2EA;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer p {
+    text-align: center;
+    margin: 5px 0;
+}
+
+button:hover {
+    background-color: #E6D8C5;
+    color: #35291F;
+}
+
+button:active {
+    background-color: #977755;
+    color: #F7F2EA;
+}
+
+.RegisterLink:hover {
+    background-color: #F7F2EA;
+}
+
+.RegisterLink:active {
+    background-color: #977755;
+    color: #F7F2EA;
+}
+
+input:required {
+    border-left: 3px solid #977755;
+}
+
+/* Псевдоэлементы */
+
+::selection {
+    background-color: #35291F;
+    color: #F7F2EA;
+}
+
+input::placeholder {
+    color: #050000;
+}
+
+
+tbody tr:nth-child(odd) {
+    background-color: #F0E8DD;
 }

@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="CSS/normalize.css" />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet"/>
+  </head>
+  <body>
+    <header>
+        <h1><a href="index.html">Городской вестник</a></h1>
+        <p class="defaultTextColor SiteDescription">Форма для регистрации</p>
+    </header>
+
+    <main>
+        <form method="post">
+            <fieldset>
+                <legend>Личная информация</legend>
+                <label for="username" class="FieldLabel">Имя:</label>
+                <input type="text" id="username" name="username" placeholder="Например: Иван" required>
+                
+                <label for="birthdate" class="FieldLabel">Дата рождения:</label>
+                <input type="date" id="birthdate" name="birthdate" required>
+                <fieldset>
+                    <legend>Пол:</legend>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Мужской</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Женский</label>
+                </fieldset>
+
+                <label for="password" class="FieldLabel">Пароль:</label>
+                <input type="password" id="password" name="password" placeholder="Введите пароль:" required>
+            </fieldset>
+            <fieldset>
+                <legend>Контактные данные</legend>
+                <label for="email" class="FieldLabel">Почта:</label>
+                <input type="email" id="email" name="email" placeholder="Например: Kirill@example.com" required>
+
+                <label for="phone" class="FieldLabel">Номер телефона:</label>
+                <input type="tel" id="phone" name="phone" placeholder="+7(999) 999-99-99">
+
+                <fieldset>
+                    <legend>Интересующие темы</legend>
+
+                    <input type="checkbox" id="news" name="interests" value="news" checked>
+                    <label for="news">Новости</label>
+
+                    <input type="checkbox" id="business" name="interests" value="business">
+                    <label for="business">Бизнес</label>
+
+                    <input type="checkbox" id="culture" name="interests" value="culture">
+                    <label for="culture">Культура</label>
+
+                    <input type="checkbox" id="technology" name="interests" value="technology">
+                    <label for="technology">Технологии</label>
+                </fieldset>
+            </fieldset>
+
+            <div class="SubmitContainer">
+                <button type="submit">✓ Зарегистрироваться</button>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <p>© 2026 Городской вестник</p>
+        <p>Скуратов Кирилл</p>
+    </footer>
+  </body>
+</html>
